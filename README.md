@@ -1,10 +1,10 @@
-# ♜ PromptMate: Multi-Agent AI Chess Engine
+# ♜ ChessMate AI: Multi-Agent AI Chess Engine
 
-![AutoChess Workflow](assets/autochess_workflow.png)
+![ChessMate AI Workflow](assets/chessmate_workflow.png)
 
 ## 📖 About the Project
 
-PromptMate is an advanced, fully autonomous chess simulation where two cutting-edge Language Models (LLMs) battle against each other on a digital chessboard. 
+ChessMate AI is an advanced, fully autonomous chess simulation where two cutting-edge Language Models (LLMs) battle against each other on a digital chessboard. 
 
 Unlike traditional chess engines (like Stockfish) that rely on brute-force search trees, this project explores **Agentic AI behavior**. The agents use **Microsoft's AutoGen** framework to hold a structured conversation, reasoning about their next moves in natural language. To interact with the physical game state, they rely on **strict LLM Tool Calling (Function Calling)** to trigger Python code that validates and executes their moves via the `python-chess` library.
 
@@ -31,8 +31,8 @@ If you have forked this repository to your own GitHub account, follow these exac
 ### 1. Clone your fork
 Replace `<YOUR_GITHUB_USERNAME>` with your actual username:
 ```bash
-git clone https://github.com/<YOUR_GITHUB_USERNAME>/awesome-llm-apps.git
-cd awesome-llm-apps/advanced_ai_agents/autonomous_game_playing_agent_apps/ai_chess_agent
+git clone https://github.com/<YOUR_GITHUB_USERNAME>/chessmate_ai.git
+cd chessmate_ai
 ```
 
 ### 2. Create a virtual environment (Recommended)

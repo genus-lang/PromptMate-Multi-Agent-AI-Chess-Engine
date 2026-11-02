@@ -63,7 +63,7 @@ if max_turns_input:
     st.session_state.max_turns = max_turns_input
     st.sidebar.success(f"Max turns of total chess moves set to {st.session_state.max_turns}!")
 
-st.title("PromptMate: Multi-Agent AI Chess")
+st.title("ChessMate AI: Multi-Agent AI Chess")
 
 def available_moves() -> str:
     """
@@ -292,7 +292,7 @@ The game is managed by a **Game Master** that:
                 st.subheader("Game Summary (PGN)")
                 import chess.pgn
                 game = chess.pgn.Game.from_board(st.session_state.board)
-                game.headers["Event"] = "PromptMate Match"
+                game.headers["Event"] = "ChessMate AI Match"
                 game.headers["White"] = "Agent White"
                 game.headers["Black"] = "Agent Black"
                 st.code(str(game.mainline_moves()), language="text")
